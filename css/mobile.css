@@ -1,0 +1,45 @@
+@media (max-width:768px) {
+    .menu_btn{
+        display:flex !important
+    }
+
+    .nav_items{
+        display:none;
+    }
+
+    .nav-2{
+        margin: 0;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 8px 0;
+    }
+    .hover_header{
+        font-size: 16px;
+
+    }
+    .hover_items{
+        width: 100%;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .hover-items-dropdown {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 40px;
+        background: var(--color-dark-blue-500);
+        margin-bottom: 20px;
+    }
+    .hover-dropdown-item{
+        color:#fff;
+    }
+    .select-item-dropdown{
+        margin-top: 0;
+        margin-left: 40px;
+        background: var(--color-dark-blue-500);
+        margin-bottom: 20px;
+    }
+    .select-items-item-link{
+        color:#fff;
+    }
+}
