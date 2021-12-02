@@ -1,45 +1,77 @@
-@media (max-width:768px) {
-    .menu_btn{
-        display:flex !important
-    }
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .default_lng_item {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .menu_btn {
+    display: flex !important;
+  }
 
-    .nav_items{
-        display:none;
-    }
+  .nav_items {
+    display: none;
+  }
 
-    .nav-2{
-        margin: 0;
-        font-size: 16px;
-        line-height: 19px;
-        padding: 8px 0;
-    }
-    .hover_header{
-        font-size: 16px;
+  .hover_items,
+  .select_items {
+    position: relative;
+    width: 100%;
+    justify-content: flex-start;
+  }
 
-    }
-    .hover_items{
-        width: 100%;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-    }
-    .hover-items-dropdown {
-        width: 100%;
-        margin-top: 0;
-        margin-left: 40px;
-        background: var(--color-dark-blue-500);
-        margin-bottom: 20px;
-    }
-    .hover-dropdown-item{
-        color:#fff;
-    }
-    .select-item-dropdown{
-        margin-top: 0;
-        margin-left: 40px;
-        background: var(--color-dark-blue-500);
-        margin-bottom: 20px;
-    }
-    .select-items-item-link{
-        color:#fff;
-    }
+  .nav-2 {
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 8px 0;
+  }
+  .nav-2:nth-of-type(3) {
+    margin: 0 0 10px 0;
+  }
+  .hover_header {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .hover-items-dropdown {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 3px;
+    background: var(--color-dark-blue-500);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hover-dropdown-item {
+    color: #fff;
+  }
+  .select-item-dropdown {
+    margin-top: 0;
+    margin-left: 10px;
+    background: var(--color-dark-blue-500);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .select-items-item-link {
+    color: #fff;
+  }
+  .cars {
+    overflow-y: scroll;
+  }
+  .logo {
+    margin-left: 31px;
+    margin-bottom: 13px;
+  }
+  .side_drower {
+    height: 100%;
+  }
+  .side_drower_items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 55px 0;
+  }
 }
