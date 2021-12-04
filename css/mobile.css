@@ -3,6 +3,10 @@
     max-width: 94.58%;
     margin: 0 auto;
   }
+  .arrow_items {
+    min-height: 277px;
+  }
+
   .default_lng_item {
     font-size: 16px;
     margin-bottom: 10px;
@@ -12,18 +16,25 @@
   }
 
   .nav_items,
-  .text_first {
+  .text_first,
+  .slider_radio {
     display: none;
   }
 
   .auctions_today {
+    margin-top: 24px;
     font-size: 34px;
     letter-spacing: 0.0025em;
   }
   .popular h3,
   .pop_cars {
     font-size: 34px;
+    margin-top: 32px;
     letter-spacing: 0.0025em;
+  }
+
+  .pop_cars {
+    margin-top: 39px;
   }
   .hover_items,
   .select_items {
@@ -72,6 +83,7 @@
     color: #fff;
   }
   .cars {
+    margin-bottom: 0;
     overflow-y: scroll;
   }
   .logo {
@@ -81,6 +93,7 @@
   .side_drower {
     height: 100%;
   }
+
   .side_drower_items {
     display: flex;
     flex-direction: column;
@@ -102,6 +115,16 @@
   .table_mobile {
     margin: 0 39px;
   }
+  .footer {
+    margin-top: 71px;
+  }
+  .social_image {
+    margin-top: 32px;
+  }
+
+  .text_second {
+    margin-top: 29px;
+  }
 }
 
 @media (max-width: 678px) {
@@ -115,7 +138,9 @@
   .text_first {
     display: none;
   }
-
+  .arrow_items {
+    min-height: 152px;
+  }
   .mobile_section {
     display: block !important;
   }
@@ -136,18 +161,37 @@
     color: var(--color-dark-blue-500);
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 56px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
-
+  .pop_cars {
+    margin-top: 39px;
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
   .table-td-time {
     font-size: 15px;
   }
 
   .popular {
     position: relative;
-    margin-top: 64px;
+    margin-top: 34px;
     margin-bottom: 40px;
+  }
+  .footer {
+    height: 125px;
+    margin-top: 55px;
+  }
+  .social_image {
+    margin-top: 18px;
+    width: 44px;
+    height: 44px;
+  }
+  .social img {
+    margin: 10px auto;
+  }
+  .text_second {
+    margin-top: 16px;
   }
 }
