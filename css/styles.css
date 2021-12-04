@@ -43,6 +43,9 @@
 }
 
 .nav-2:nth-last-of-type(1) {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 14px;
   margin-right: 0;
 }
 
@@ -245,6 +248,7 @@ nav {
 }
 .slider_text {
   position: absolute;
+  top: 32px;
   width: 282px;
   height: 56px;
   font-family: "roboto";
@@ -592,7 +596,7 @@ nav {
 .text_first {
   letter-spacing: 1.5px;
   line-height: 14.06px;
-  margin-top: 16px;
+  margin-top: 20px;
   text-align: center;
   font-family: "roboto";
   font-weight: 900;
@@ -614,7 +618,7 @@ nav {
 .text_third {
   letter-spacing: 1px;
   line-height: 11.72px;
-  margin-top: 14px;
+  margin-top: 4px;
   text-align: center;
   font-family: "roboto";
   font-weight: 400;
@@ -680,7 +684,13 @@ nav {
 .hamburger-menu-button-close::after {
   transform: translateY(6px) rotate(-45deg);
 }
-
+.side_active_name {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.0125em;
+}
 .side_drawer {
   width: 78%;
   background-color: var(--color-dark-blue-500);

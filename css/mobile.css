@@ -11,15 +11,28 @@
     display: flex !important;
   }
 
-  .nav_items {
+  .nav_items,
+  .text_first {
     display: none;
   }
 
+  .auctions_today {
+    font-size: 34px;
+    letter-spacing: 0.0025em;
+  }
+  .popular h3,
+  .pop_cars {
+    font-size: 34px;
+    letter-spacing: 0.0025em;
+  }
   .hover_items,
   .select_items {
     position: relative;
     width: 100%;
     justify-content: flex-start;
+  }
+  .slider_text {
+    top: 16px;
   }
 
   .nav-2 {
@@ -98,7 +111,8 @@
   .btn_slider,
   .arrow_left,
   .arrow_right,
-  .slider_text {
+  .slider_text,
+  .text_first {
     display: none;
   }
 

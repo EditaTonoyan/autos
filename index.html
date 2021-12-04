@@ -133,39 +133,41 @@
     </header>
 
     <div id="side_effect" class="side_drawer side_drawer_none">
-      <div class="side_drower_items">
+      <div class="side_drower_items side_active_name">
         <!-- HOME -->
-        <a href="#" class="nav-2">Home</a>
+        <a href="#" class="nav-2 side_active_name">Home</a>
         <div class="hover_content">
           <div class="hovered_item">
             <div class="hover_header">
-              <p class="active_name">Auctions</p>
+              <p class="side_active_name">Auctions</p>
             </div>
             <img class="arrow_svg" src="./images/arrow_down.svg" alt="arrow" />
           </div>
 
           <div class="hover_items">
             <div class="hover-items-dropdown">
-              <a role="button" class="hover-dropdown-item" href="/today-auctions"
+              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
                 >Today's Auctions</a
               >
-              <a role="button" class="hover-dropdown-item" href="/today-auctions"
+              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
                 >Auctions Calendar</a
               >
-              <a role="button" class="hover-dropdown-item" href="/today-auctions">Sold Out</a>
+              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
+                >Sold Out</a
+              >
             </div>
           </div>
         </div>
         <!-- LOGIN -->
-        <a href="#" class="nav-2">LogIn</a>
+        <a href="#" class="nav-2 side_active_name">LogIn</a>
         <!-- REGISTER -->
-        <a href="#" class="nav-2">Register</a>
+        <a href="#" class="nav-2 side_active_name">Register</a>
         <!-- LANGS -->
         <div class="select_lng">
           <div class="default_lng">
             <div class="flex default_lng_item">
               <img src="./images/flag.svg" alt="flag_en" />
-              <div class="default_lng_item">Eng</div>
+              <div class="default_lng_item side_active_name">Eng</div>
               <img src="./images/arrow_down.svg" class="arrow_lng" alt="arrow" />
             </div>
           </div>
@@ -174,10 +176,15 @@
             <div class="select-item-dropdown">
               <div class="flex select-items-item">
                 <img src="./images/flag.svg" class="select_image" alt="flag_en" />
-                <a role="button" class="select-items-item-link" href="/today-auctions">Ru</a>
+                <a
+                  role="button"
+                  class="select-items-item-link side_active_name"
+                  href="/today-auctions"
+                  >Ru</a
+                >
               </div>
               <div class="flex select-items-item">
-                <img src="./images/flag.svg" class="select_image" alt="flag_en" />
+                <img src="./images/flag.svg" class="select_image side_active_name" alt="flag_en" />
                 <a role="button" class="select-items-item-link" href="/today-auctions">Arm</a>
               </div>
             </div>
@@ -187,21 +194,27 @@
         <!-- DATE -->
         <div class="hover_content_date">
           <div class="hovered_item">
-            <div class="hover_header">05:07PM</div>
+            <div class="hover_header side_active_name">05:07PM</div>
             <img class="arrow_svg" src="./images/arrow_down.svg" alt="arrow" />
           </div>
 
           <div class="hover_items">
             <div class="hover-items-dropdown">
-              <a role="button" class="hover-dropdown-item" href="/today-auctions">08:30PM</a>
-              <a role="button" class="hover-dropdown-item" href="/today-auctions">09:35PM</a>
-              <a role="button" class="hover-dropdown-item" href="/today-auctions">09:15PM</a>
+              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
+                >08:30PM</a
+              >
+              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
+                >09:35PM</a
+              >
+              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
+                >09:15PM</a
+              >
             </div>
           </div>
         </div>
 
         <!-- CONTACT US -->
-        <a href="#" class="nav-2">Contact Us</a>
+        <a href="#" class="nav-2 side_active_name">Contact Us</a>
       </div>
     </div>
 
