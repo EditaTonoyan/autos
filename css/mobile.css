@@ -1,6 +1,6 @@
-@media (max-width: 768px) {
+@media (max-width: 1110px) {
   .container {
-    max-width: 100%;
+    max-width: 94.58%;
     margin: 0 auto;
   }
   .default_lng_item {
@@ -73,5 +73,67 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 12px 55px 0;
+  }
+  .table-td-text {
+    font-size: 15px;
+  }
+  .card_button {
+    width: 178px;
+    height: 32px;
+  }
+  .table-td-live {
+    width: 40px;
+    height: 13px;
+    margin: 4px 0 0 12px;
+  }
+  .table_mobile {
+    margin: 0 39px;
+  }
+}
+
+@media (max-width: 678px) {
+  .auctions {
+    display: none;
+  }
+  .btn_slider,
+  .arrow_left,
+  .arrow_right,
+  .slider_text {
+    display: none;
+  }
+
+  .mobile_section {
+    display: block !important;
+  }
+
+  .auctions_today {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.0015em;
+    margin: 16px 0 22px 0;
+  }
+  .cars {
+    overflow-y: hidden;
+  }
+  .popular h3 {
+    color: var(--color-dark-blue-500);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 16px;
+  }
+
+  .table-td-time {
+    font-size: 15px;
+  }
+
+  .popular {
+    position: relative;
+    margin-top: 64px;
+    margin-bottom: 40px;
   }
 }

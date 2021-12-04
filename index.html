@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/script.js" async></script>
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
@@ -89,9 +97,9 @@
                 </div>
 
                 <!-- DATE -->
-                <div class="hover_content_date">
+                <div id="lol" class="hover_content_date">
                   <div class="hovered_item">
-                    <div class="hover_header">05:07PM</div>
+                    <div class="hover_header time_dec">05:07PM</div>
                     <img class="arrow_svg" src="./images/arrow_down.svg" alt="arrow" />
                   </div>
 
@@ -115,20 +123,16 @@
               </div>
 
               <!-- MENU -->
-              <div class="menu_btn">
-                <a href="#side_effect">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </a>
-              </div>
+              <button id="menu_btn" data-toggle="ham-navigation" class="menu_btn">
+                <span class="hamburger-menu-button-open">Menu</span>
+              </button>
             </div>
           </nav>
         </div>
       </div>
     </header>
 
-    <div id="side_effect" class="side_drawer">
+    <div id="side_effect" class="side_drawer side_drawer_none">
       <div class="side_drower_items">
         <!-- HOME -->
         <a href="#" class="nav-2">Home</a>
@@ -203,6 +207,7 @@
 
     <section class="slider">
       <div class="container arrow_items">
+        <p class="slider_text">Lorem Ipsum</p>
         <div class="arrow_items">
           <button class="btn_slider">
             <img src="./images/left.png" alt="left" />
@@ -218,6 +223,7 @@
         </div>
       </div>
     </section>
+
     <section class="mobile_section container">
       <h3 class="auctions_today">Today's Auctions</h3>
       <div>
@@ -229,18 +235,26 @@
               <p>Items:</p>
             </div>
             <div class="second_col">
-              <div>
-                <p>11:00 PM</p>
-                <img src="./images/LIVE NOW.png" alt="live now" />
+              <div class="second-col-item">
+                <p class="table-td-time">11:00PM</p>
+                <img class="second-col-item-img" src="./images/LIVE NOW.png" alt="live now" />
+              </div>
+              <div class="second-col-item">
+                <img
+                  class="second-col-item-geogia"
+                  src="./images/flag_georgia.svg"
+                  alt="georgia_flag"
+                />
+                <p class="table-td-text">Georgia</p>
               </div>
               <div>
-                <img src="./images/flag_georgia.svg" alt="georgia_flag" />
-                <p>Georgia</p>
-              </div>
-              <div>
-                <p>61</p>
+                <p class="table-td-text">61</p>
               </div>
             </div>
+          </div>
+          <div class="card_button_items">
+            <button class="card_button">Join Auction</button>
+            <a href="#" class="card_text">View Sale List </a>
           </div>
         </div>
       </div>
@@ -262,10 +276,10 @@
           </div>
           <div class="table-td">
             <img class="table-td-flag" src="./images/flag_georgia.svg" alt="flag_georgia" />
-            <div>Georgia</div>
+            <div class="table-td-text">Georgia</div>
           </div>
           <div class="table-td">
-            <div>67</div>
+            <div class="table-td-text">67</div>
           </div>
           <div class="table-td-last">
             <button class="table-td-button">Join Auction</button>
@@ -278,7 +292,7 @@
     <section class="container popular">
       <h3>Popular Car</h3>
 
-      <div class="cars__wrapper">
+      <div class="cars_wrapper">
         <div class="cars">
           <div>
             <img src="./images/bmw white.png" alt="bmw1" />
@@ -330,9 +344,9 @@
       </div>
     </section>
 
-    <section class="container popular">
-      <h3>Sold Out</h3>
-      <div class="cars__wrapper">
+    <section class="container">
+      <h3 class="pop_cars">Sold Out</h3>
+      <div class="cars_wrapper">
         <div class="cars">
           <div class="cars_item">
             <img src="./images/auto_1.png" alt="bmw1" />
