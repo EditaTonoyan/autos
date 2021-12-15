@@ -1,26 +1,28 @@
-@media (max-width: 1110px) {
+@media (max-width: 1187px) {
   .container {
-    max-width: 94.58%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 39px;
   }
-  .arrow_items {
+}
+@media (max-width: 1110px) {
+  .arrows {
     min-height: 277px;
   }
 
-  .default_lng_item {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  .menu_btn {
+  .menu--btn {
     display: flex !important;
   }
 
-  .nav_items,
+  .header__navigation_items,
   .text_first,
-  .slider_radio {
+  .slider__radio {
     display: none;
   }
-
+  .header__navigation_items_item,
+  .hovered__item {
+    margin-bottom: 15px;
+  }
   .auctions_today {
     margin-top: 24px;
     font-size: 34px;
@@ -36,8 +38,8 @@
   .pop_cars {
     margin-top: 39px;
   }
-  .hover_items,
-  .select_items {
+  .hover__items,
+  .select--items {
     position: relative;
     width: 100%;
     justify-content: flex-start;
@@ -55,11 +57,11 @@
   .nav-2:nth-of-type(3) {
     margin: 0 0 10px 0;
   }
-  .hover_header {
+  .hovered__item__header {
     font-size: 16px;
     margin-left: 0;
   }
-  .hover-items-dropdown {
+  .hovered__items__dropdown {
     width: 100%;
     margin-top: 10px;
     margin-left: 3px;
@@ -68,10 +70,11 @@
     display: flex;
     flex-direction: column;
   }
-  .hover-dropdown-item {
+  .hover_dropdown_item {
+    padding: 6px 6px 6px 6px;
     color: #fff;
   }
-  .select-item-dropdown {
+  .select-items-dropdown {
     margin-top: 0;
     margin-left: 10px;
     background: var(--color-dark-blue-500);
@@ -79,35 +82,34 @@
     display: flex;
     flex-direction: column;
   }
-  .select-items-item-link {
+  .dropdown_item_link {
     color: #fff;
   }
   .cars {
     margin-bottom: 0;
-    overflow-y: scroll;
+    overflow: scroll;
   }
   .logo {
-    margin-left: 31px;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
   }
   .side_drower {
     height: 100%;
   }
 
-  .side_drower_items {
+  .side__drower_items {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 12px 55px 0;
   }
-  .table-td-text {
+  .table__td_text {
     font-size: 15px;
   }
   .card_button {
     width: 178px;
     height: 32px;
   }
-  .table-td-live {
+  .table__td_live {
     width: 40px;
     height: 13px;
     margin: 4px 0 0 12px;
@@ -126,19 +128,23 @@
     margin-top: 29px;
   }
 }
-
+@media (max-width: 1132px) {
+  .container {
+    padding: 0 39px;
+  }
+}
 @media (max-width: 678px) {
   .auctions {
     display: none;
   }
-  .btn_slider,
+  .slider_buttons,
   .arrow_left,
   .arrow_right,
   .slider_text,
   .text_first {
     display: none;
   }
-  .arrow_items {
+  .arrows {
     min-height: 152px;
   }
   .mobile_section {
@@ -170,7 +176,7 @@
     margin-bottom: 8px;
     font-size: 24px;
   }
-  .table-td-time {
+  .table__td_time {
     font-size: 15px;
   }
 
@@ -180,7 +186,6 @@
     margin-bottom: 40px;
   }
   .footer {
-    height: 125px;
     margin-top: 55px;
   }
   .social_image {

@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,394 +28,372 @@
     <title>Autos</title>
   </head>
   <body>
-    <header class="main_header">
+    <header class="main__header">
       <div class="container header">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="logo" />
-        </div>
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+        <nav class="header__navigatiom">
+          <div class="header__navigation_items">
+            <a href="#" class="header__navigation_items_item nav_item_underline">Home</a>
 
-        <div>
-          <nav>
-            <div class="flex">
-              <div class="nav_items">
-                <!-- HOME -->
-                <a href="#" class="nav-2">Home</a>
-
-                <div class="hover_content">
-                  <div class="hovered_item">
-                    <div class="hover_header">
-                      <p class="active_name">Auctions</p>
-                    </div>
-                    <img class="arrow_svg" src="./images/arrow_down.svg" alt="arrow" />
-                  </div>
-
-                  <div class="hover_items">
-                    <div class="hover-items-dropdown">
-                      <a role="button" class="hover-dropdown-item" href="/today-auctions"
-                        >Today's Auctions</a
-                      >
-                      <a role="button" class="hover-dropdown-item" href="/today-auctions"
-                        >Auctions Calendar</a
-                      >
-                      <a role="button" class="hover-dropdown-item" href="/today-auctions"
-                        >Sold Out</a
-                      >
-                    </div>
-                  </div>
+            <div class="nav__item__hover">
+              <div class="hovered__item">
+                <div class="hovered__item_header">
+                  <p class="hovered__item_name">Auctions</p>
                 </div>
-                <!-- LOGIN -->
-                <a href="#" class="nav-2">LogIn</a>
-                <!-- REGISTER -->
-                <a href="#" class="nav-2">Register</a>
-                <!-- LANGS -->
-                <div class="select_lng">
-                  <div class="default_lng">
-                    <div class="flex default_lng_item">
-                      <img src="./images/flag.svg" alt="flag_en" />
-                      <div class="default_lng_item">Eng</div>
-                      <img src="./images/arrow_down.svg" class="arrow_lng" alt="arrow" />
-                    </div>
-                  </div>
-
-                  <div class="select_items">
-                    <div class="select-item-dropdown">
-                      <div class="flex select-items-item">
-                        <img src="./images/flag.svg" class="select_image" alt="flag_en" />
-                        <a role="button" class="select-items-item-link" href="/today-auctions"
-                          >Ru</a
-                        >
-                      </div>
-                      <div class="flex select-items-item">
-                        <img src="./images/flag.svg" class="select_image" alt="flag_en" />
-                        <a role="button" class="select-items-item-link" href="/today-auctions"
-                          >Arm</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- DATE -->
-                <div id="lol" class="hover_content_date">
-                  <div class="hovered_item">
-                    <div class="hover_header time_dec">05:07PM</div>
-                    <img class="arrow_svg" src="./images/arrow_down.svg" alt="arrow" />
-                  </div>
-
-                  <div class="hover_items">
-                    <div class="hover-items-dropdown">
-                      <a role="button" class="hover-dropdown-item" href="/today-auctions"
-                        >08:30PM</a
-                      >
-                      <a role="button" class="hover-dropdown-item" href="/today-auctions"
-                        >09:35PM</a
-                      >
-                      <a role="button" class="hover-dropdown-item" href="/today-auctions"
-                        >07:15PM</a
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <!-- CONTACT US -->
-                <a href="#" class="nav-2">Contact Us</a>
+                <img src="./images/arrow_down.svg" alt="arrow" class="hovered__item_arrow" />
               </div>
 
-              <!-- MENU -->
-              <button id="menu_btn" data-toggle="ham-navigation" class="menu_btn">
-                <span class="hamburger-menu-button-open">Menu</span>
-              </button>
+              <div class="hover__items">
+                <div class="hovered__items__dropdown">
+                  <a class="hover_dropdown_item" href="/today-auctions">Today's Auctions</a>
+                  <a class="hover_dropdown_item" href="/today-auctions">Auctions Calendar</a>
+                  <a class="hover_dropdown_item" href="/today-auctions">Sold Out</a>
+                </div>
+              </div>
             </div>
-          </nav>
-        </div>
+
+            <a href="#" class="header__navigation_items_item">LogIn</a>
+
+            <a href="#" class="header__navigation_items_item">Register</a>
+
+            <div class="nav__item__hover">
+              <div class="hovered__item">
+                <img src="./images/flag.svg" alt="flag_en" />
+
+                <div class="hovered__item_header">
+                  <p class="hovered__item_name">Eng</p>
+                </div>
+                <img src="./images/arrow_down.svg" alt="arrow" class="hovered__item_arrow" />
+              </div>
+
+              <div class="hover__items">
+                <div class="hovered__items__dropdown">
+                  <div class="flex dropdown_item">
+                    <img src="./images/flag.svg" class="select_image" alt="flag_en" />
+                    <a role="button" class="dropdown__item_link" href="/today-auctions">Ru</a>
+                  </div>
+                  <div class="flex dropdown_item">
+                    <img src="./images/flag.svg" class="select_image" alt="flag_en" />
+                    <a role="button" class="dropdown__item_link" href="/today-auctions">Arm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav__item__hover">
+              <div class="hovered__item">
+                <img src="./images/flag.svg" alt="flag_en" />
+
+                <div class="hovered__item_header">
+                  <p class="hovered__item_name time_dec">05:07PM</p>
+                </div>
+                <img src="./images/arrow_down.svg" alt="arrow" class="hovered__item_arrow" />
+              </div>
+
+              <div class="hover__items">
+                <div class="hovered__items__dropdown">
+                  <a role="button" class="hover_dropdown_item" href="/today-auctions">08:30PM</a>
+                  <a role="button" class="hover_dropdown_item" href="/today-auctions">09:35PM</a>
+                  <a role="button" class="hover_dropdown_item" href="/today-auctions">07:15PM</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="header__navigation_items_item">Contact Us</a>
+          </div>
+
+          <button id="menu_btn" data-toggle="ham-navigation" class="menu--btn">
+            <span class="hamburger__menu__button__open">Menu</span>
+          </button>
+        </nav>
       </div>
     </header>
 
-    <div id="side_effect" class="side_drawer side_drawer_none">
-      <div class="side_drower_items side_active_name">
-        <!-- HOME -->
-        <a href="#" class="nav-2 side_active_name">Home</a>
-        <div class="hover_content">
-          <div class="hovered_item">
-            <div class="hover_header">
+    <div id="side_effect" class="side__drawer side_drawer_none">
+      <div class="side__drower_items side_active_name">
+        <a href="#" class="header__navigation_items_item side_active_name nav_item_underline"
+          >Home</a
+        >
+
+        <div class="nav__item__hover">
+          <div class="hovered__item">
+            <div class="hovered__item_header">
               <p class="side_active_name">Auctions</p>
             </div>
-            <img class="arrow_svg" src="./images/arrow_down.svg" alt="arrow" />
+            <img class="hovered__item_arrow" src="./images/arrow_down.svg" alt="arrow" />
           </div>
 
-          <div class="hover_items">
-            <div class="hover-items-dropdown">
-              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
+          <div class="hover__items">
+            <div class="hovered__items__dropdown">
+              <a role="button" class="hover_dropdown_item side_active_name" href="/today-auctions"
                 >Today's Auctions</a
               >
-              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
+              <a role="button" class="hover_dropdown_item side_active_name" href="/today-auctions"
                 >Auctions Calendar</a
               >
-              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
+              <a role="button" class="hover_dropdown_item side_active_name" href="/today-auctions"
                 >Sold Out</a
               >
             </div>
           </div>
         </div>
-        <!-- LOGIN -->
-        <a href="#" class="nav-2 side_active_name">LogIn</a>
-        <!-- REGISTER -->
-        <a href="#" class="nav-2 side_active_name">Register</a>
-        <!-- LANGS -->
-        <div class="select_lng">
-          <div class="default_lng">
-            <div class="flex default_lng_item">
-              <img src="./images/flag.svg" alt="flag_en" />
-              <div class="default_lng_item side_active_name">Eng</div>
-              <img src="./images/arrow_down.svg" class="arrow_lng" alt="arrow" />
+        <a href="#" class="header__navigation_items_item side_active_name">LogIn</a>
+        <a href="#" class="header__navigation_items_item side_active_name">Register</a>
+
+        <div class="nav__item__hover">
+          <div class="hovered__item">
+            <img src="./images/flag.svg" alt="flag_en" />
+            <div class="hovered__item_header">
+              <p class="side_active_name">Eng</p>
             </div>
+            <img class="hovered__item_arrow" src="./images/arrow_down.svg" alt="arrow" />
           </div>
 
-          <div class="select_items">
-            <div class="select-item-dropdown">
-              <div class="flex select-items-item">
+          <div class="hover__items">
+            <div class="hovered__items__dropdown">
+              <div class="flex dropdown_item">
                 <img src="./images/flag.svg" class="select_image" alt="flag_en" />
-                <a
-                  role="button"
-                  class="select-items-item-link side_active_name"
-                  href="/today-auctions"
-                  >Ru</a
-                >
+                <a role="button" class="hover_dropdown_item" href="/today-auctions">Ru</a>
               </div>
-              <div class="flex select-items-item">
+              <div class="flex dropdown_item">
                 <img src="./images/flag.svg" class="select_image side_active_name" alt="flag_en" />
-                <a role="button" class="select-items-item-link" href="/today-auctions">Arm</a>
+                <a role="button" class="hover_dropdown_item" href="/today-auctions">Arm</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- DATE -->
-        <div class="hover_content_date">
-          <div class="hovered_item">
-            <div class="hover_header side_active_name">05:07PM</div>
-            <img class="arrow_svg" src="./images/arrow_down.svg" alt="arrow" />
+        <div class="nav__item__hover">
+          <div class="hovered__item">
+            <div class="hovered__item_header side_active_name">05:07PM</div>
+            <img class="hovered__item_arrow" src="./images/arrow_down.svg" alt="arrow" />
           </div>
 
-          <div class="hover_items">
-            <div class="hover-items-dropdown">
-              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
+          <div class="hover__items">
+            <div class="hovered__items__dropdown">
+              <a role="button" class="hover_dropdown_item side_active_name" href="/today-auctions"
                 >08:30PM</a
               >
-              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
+              <a role="button" class="hover_dropdown_item side_active_name" href="/today-auctions"
                 >09:35PM</a
               >
-              <a role="button" class="hover-dropdown-item side_active_name" href="/today-auctions"
+              <a role="button" class="hover_dropdown_item side_active_name" href="/today-auctions"
                 >09:15PM</a
               >
             </div>
           </div>
         </div>
 
-        <!-- CONTACT US -->
-        <a href="#" class="nav-2 side_active_name">Contact Us</a>
+        <a href="#" class="header__navigation_items_item side_active_name">Contact Us</a>
       </div>
     </div>
 
     <section class="slider">
-      <div class="container arrow_items">
+      <div class="container arrows">
         <p class="slider_text">Lorem Ipsum</p>
-        <div class="arrow_items">
-          <button class="btn_slider">
+        <div class="arrows">
+          <button class="slider_buttons">
             <img src="./images/left.png" alt="left" />
           </button>
-          <button class="btn_slider">
+          <button class="slider_buttons">
             <img src="./images/right.png" alt="next" />
           </button>
         </div>
-        <div class="slider_radio">
-          <div class="slider-radio-btn"></div>
-          <div class="slider-radio-btn"></div>
-          <div class="slider-radio-btn"></div>
+        <div class="slider__radio">
+          <div class="slider__radio_btn"></div>
+          <div class="slider__radio_btn"></div>
+          <div class="slider__radio_btn"></div>
         </div>
       </div>
     </section>
 
-    <section class="mobile_section container">
-      <h3 class="auctions_today">Today's Auctions</h3>
-      <div>
-        <div class="card">
-          <div class="card_items">
-            <div class="first_col">
-              <p>Sale Time:</p>
-              <p>Sale Name:</p>
-              <p>Items:</p>
-            </div>
-            <div class="second_col">
-              <div class="second-col-item">
-                <p class="table-td-time">11:00PM</p>
-                <img class="second-col-item-img" src="./images/LIVE NOW.png" alt="live now" />
+    <section class="mobile_section">
+      <div class="container">
+        <h3 class="auctions_today">Today's Auctions</h3>
+        <div>
+          <div class="card">
+            <div class="card__items">
+              <div class="first_col">
+                <p>Sale Time:</p>
+                <p>Sale Name:</p>
+                <p>Items:</p>
               </div>
-              <div class="second-col-item">
-                <img
-                  class="second-col-item-geogia"
-                  src="./images/flag_georgia.svg"
-                  alt="georgia_flag"
-                />
-                <p class="table-td-text">Georgia</p>
+              <div class="second__col">
+                <div class="second__col_item">
+                  <p class="table__td_time">11:00PM</p>
+                  <img class="second__col_item_img" src="./images/LIVE NOW.png" alt="live now" />
+                </div>
+                <div class="second__col_item">
+                  <img
+                    class="second__col_item_country"
+                    src="./images/flag_georgia.svg"
+                    alt="georgia_flag"
+                  />
+                  <p class="table__td_text">Georgia</p>
+                </div>
+                <div>
+                  <p class="table__td_text">61</p>
+                </div>
               </div>
-              <div>
-                <p class="table-td-text">61</p>
+            </div>
+            <div class="card_button_items">
+              <button class="card_button">Join Auction</button>
+              <a href="#" class="card_text">View Sale List </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="auctions">
+      <div class="container">
+        <h3 class="auctions_today">Today's Auctions</h3>
+        <div class="table">
+          <div class="table_th">
+            <div>Sale Time</div>
+            <div>Sale Name</div>
+            <div>Items</div>
+            <div>Action</div>
+          </div>
+          <div class="table__tr">
+            <div class="table__td">
+              <div class="table__td_time">11:00 PM</div>
+              <img class="table__td_live" src="./images/LIVE NOW.png" alt="live_now" />
+            </div>
+            <div class="table__td">
+              <img class="table__td_flag" src="./images/flag_georgia.svg" alt="flag_georgia" />
+              <div class="table__td_text">Georgia</div>
+            </div>
+            <div class="table__td">
+              <div class="table__td_text">67</div>
+            </div>
+            <div class="table__td">
+              <button class="table__td_button">Join Auction</button>
+              <a class="table__td_link" href="#">View Sale List</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular">
+      <div class="container">
+        <h3>Popular Car</h3>
+        <div class="cars__wrapper">
+          <div class="cars">
+            <div>
+              <img src="./images/bmw white.png" alt="bmw1" />
+              <div class="cars__info">
+                <p class="cars__info_name">Bmw 3er</p>
+                <a href="#">View Item</a>
+              </div>
+            </div>
+
+            <div>
+              <img class="cars_image" src="./images/merc.png" alt="mercedes1" />
+              <div class="cars__info">
+                <p class="cars__info_name">Mercedes Benz</p>
+                <a href="#">View Item</a>
+              </div>
+            </div>
+
+            <div>
+              <img class="cars_image" src="./images/bmw black.png" alt="bmw2" />
+              <div class="cars__info">
+                <p class="cars__info_name">Toyota s</p>
+                <a href="#">View Item</a>
+              </div>
+            </div>
+
+            <div>
+              <img class="cars_image" src="./images/jeep.png" alt="jeep" />
+              <div class="cars__info">
+                <p class="cars__info_name">Bmw 2erdfff</p>
+                <a href="#">View Item</a>
+              </div>
+            </div>
+
+            <div>
+              <img class="cars_image" src="./images/bmw white2.png" alt="mercedes2" />
+              <div class="cars__info">
+                <p class="cars__info_name">Mercedes Bedcc</p>
+                <a href="#">View Item</a>
               </div>
             </div>
           </div>
-          <div class="card_button_items">
-            <button class="card_button">Join Auction</button>
-            <a href="#" class="card_text">View Sale List </a>
-          </div>
+
+          <button class="btn__arrow arrow_left">
+            <img class="btn__arrow_item" src="./images/arrov2.svg" alt="back" />
+          </button>
+          <button class="btn__arrow arrow_right">
+            <img class="btn__arrow_item" src="./images/arrow_1.svg" alt="next" />
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="auctions container">
-      <h3 class="auctions_today">Today's Auctions</h3>
-      <div class="table">
-        <div class="table_th">
-          <div>Sale Time</div>
-          <div>Sale Name</div>
-          <div>Items</div>
-          <div>Action</div>
+    <section>
+      <div class="container">
+        <h3 class="pop_cars">Sold Out</h3>
+        <div class="cars__wrapper">
+          <div class="cars">
+            <div class="cars_item">
+              <img src="./images/auto_1.png" alt="bmw1" />
+              <img class="cars_sold" src="./images/sold_out.png" alt="sold_out" />
+              <div class="cars_price">$25.500</div>
+              <div class="cars__info">
+                <p class="cars__info_name">Bmw 3ercc.</p>
+                <a href="#">View Item</a>
+              </div>
+            </div>
+
+            <div class="cars_item">
+              <img class="cars_image" src="./images/auto_2.png" alt="mercedes1" />
+              <img class="cars_sold" src="./images/sold_out.png" alt="sold_out" />
+              <div class="cars_price">$25.500</div>
+              <div class="cars__info">
+                <p class="cars__info_name">Mercedes Bedff</p>
+                <a href="#">View Item</a>
+              </div>
+            </div>
+
+            <div class="cars_item">
+              <img class="cars_image" src="./images/auto_3.png" alt="toyota" />
+              <img class="cars_sold" src="./images/sold_out.png" alt="sold_out" />
+              <div class="cars_price">$25.500</div>
+              <div class="cars__info">
+                <p class="cars__info_name">Toyotadf</p>
+                <a href="#">View Item</a>
+              </div>
+            </div>
+
+            <div class="cars_item">
+              <img class="cars_image" src="./images/auto_4.png" alt="bmw2" />
+              <img class="cars_sold" src="./images/sold_out.png" alt="sold_out" />
+              <div class="cars_price">$25.500</div>
+              <div class="cars__info">
+                <p class="cars__info_name">Bmw 2ersd</p>
+                <a href="#">View Item</a>
+              </div>
+            </div>
+
+            <div class="cars_item">
+              <img class="cars_image" src="./images/auto_5.png" alt="mercedes2" />
+              <img class="cars_sold" src="./images/sold_out.png" alt="sold_out" />
+              <div class="cars_price">$25.500</div>
+              <div class="cars__info">
+                <p class="cars__info_name">Mercedes Becc</p>
+                <a href="#">View Item</a>
+              </div>
+            </div>
+          </div>
+          <button class="btn__arrow arrow_left">
+            <img class="btn__arrow_item" src="./images/arrov2.svg" alt="back" />
+          </button>
+          <button class="btn__arrow arrow_right">
+            <img class="btn__arrow_item" src="./images/arrow_1.svg" alt="next" />
+          </button>
         </div>
-        <div class="table_tr">
-          <div class="table-td">
-            <div class="table-td-time">11:00 PM</div>
-            <img class="table-td-live" src="./images/LIVE NOW.png" alt="live_now" />
-          </div>
-          <div class="table-td">
-            <img class="table-td-flag" src="./images/flag_georgia.svg" alt="flag_georgia" />
-            <div class="table-td-text">Georgia</div>
-          </div>
-          <div class="table-td">
-            <div class="table-td-text">67</div>
-          </div>
-          <div class="table-td-last">
-            <button class="table-td-button">Join Auction</button>
-            <a class="table-td-link" href="#">View Sale List</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container popular">
-      <h3>Popular Car</h3>
-
-      <div class="cars_wrapper">
-        <div class="cars">
-          <div>
-            <img src="./images/bmw white.png" alt="bmw1" />
-            <div class="cars_info">
-              <p class="cars-info-name">Bmw 3erssssssss</p>
-              <a href="#">View Item</a>
-            </div>
-          </div>
-
-          <div>
-            <img class="cars_image" src="./images/merc.png" alt="mercedes1" />
-            <div class="cars_info">
-              <p class="cars-info-name">Mercedes Benz</p>
-              <a href="#">View Item</a>
-            </div>
-          </div>
-
-          <div>
-            <img class="cars_image" src="./images/bmw black.png" alt="bmw2" />
-            <div class="cars_info">
-              <p class="cars-info-name">Toyota s</p>
-              <a href="#">View Item</a>
-            </div>
-          </div>
-
-          <div>
-            <img class="cars_image" src="./images/jeep.png" alt="jeep" />
-            <div class="cars_info">
-              <p class="cars-info-name">Bmw 2erdfff</p>
-              <a href="#">View Item</a>
-            </div>
-          </div>
-
-          <div>
-            <img class="cars_image" src="./images/bmw white2.png" alt="mercedes2" />
-            <div class="cars_info">
-              <p class="cars-info-name">Mercedes Bedcc</p>
-              <a href="#">View Item</a>
-            </div>
-          </div>
-        </div>
-
-        <button class="btn_arrow arrow_left">
-          <img class="btn_arrow-item" src="./images/arrov2.svg" alt="back" />
-        </button>
-        <button class="btn_arrow arrow_right">
-          <img class="btn_arrow-item" src="./images/arrow_1.svg" alt="next" />
-        </button>
-      </div>
-    </section>
-
-    <section class="container">
-      <h3 class="pop_cars">Sold Out</h3>
-      <div class="cars_wrapper">
-        <div class="cars">
-          <div class="cars_item">
-            <img src="./images/auto_1.png" alt="bmw1" />
-            <img class="cars_sold" src="./images/sold_out.png" alt="sold_out" />
-            <div class="cars_price">$25.500</div>
-            <div class="cars_info">
-              <p class="cars-info-name">Bmw 3ercc.</p>
-              <a href="#">View Item</a>
-            </div>
-          </div>
-
-          <div class="cars_item">
-            <img class="cars_image" src="./images/auto_2.png" alt="mercedes1" />
-            <img class="cars_sold" src="./images/sold_out.png" alt="sold_out" />
-            <div class="cars_price">$25.500</div>
-            <div class="cars_info">
-              <p class="cars-info-name">Mercedes Bedff</p>
-              <a href="#">View Item</a>
-            </div>
-          </div>
-
-          <div class="cars_item">
-            <img class="cars_image" src="./images/auto_3.png" alt="toyota" />
-            <img class="cars_sold" src="./images/sold_out.png" alt="sold_out" />
-            <div class="cars_price">$25.500</div>
-            <div class="cars_info">
-              <p class="cars-info-name">Toyotadf</p>
-              <a href="#">View Item</a>
-            </div>
-          </div>
-
-          <div class="cars_item">
-            <img class="cars_image" src="./images/auto_4.png" alt="bmw2" />
-            <img class="cars_sold" src="./images/sold_out.png" alt="sold_out" />
-            <div class="cars_price">$25.500</div>
-            <div class="cars_info">
-              <p class="cars-info-name">Bmw 2ersd</p>
-              <a href="#">View Item</a>
-            </div>
-          </div>
-
-          <div class="cars_item">
-            <img class="cars_image" src="./images/auto_5.png" alt="mercedes2" />
-            <img class="cars_sold" src="./images/sold_out.png" alt="sold_out" />
-            <div class="cars_price">$25.500</div>
-            <div class="cars_info">
-              <p class="cars-info-name">Mercedes Becc</p>
-              <a href="#">View Item</a>
-            </div>
-          </div>
-        </div>
-        <button class="btn_arrow arrow_left">
-          <img class="btn_arrow-item" src="./images/arrov2.svg" alt="back" />
-        </button>
-        <button class="btn_arrow arrow_right">
-          <img class="btn_arrow-item" src="./images/arrow_1.svg" alt="next" />
-        </button>
       </div>
     </section>
     <footer>
